@@ -1,4 +1,5 @@
 controller_manager:
+#Crear el nodo controller manager y que incluye
   ros__parameters:
     update_rate: 30
     # use_sim_time: true
@@ -21,7 +22,7 @@ diff_cont:
     wheel_separation: 0.297
     wheel_radius: 0.033
 
-    use_stamped_vel: false
+    use_stamped_vel: false #delay de la señal y actuaccion vida real
 
     # open_loop: false    
 
