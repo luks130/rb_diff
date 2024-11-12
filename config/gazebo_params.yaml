@@ -1,3 +1,3 @@
-gazebo:
+gazebo: #Este documento es mi refresh rate ya que gazebo controla eso lo defino a la fuerza
   ros__parameters:
-    publish_rate: 400.0
+    publish_rate: 400.0 #hz
