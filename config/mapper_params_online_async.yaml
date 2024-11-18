@@ -1,6 +1,7 @@
 slam_toolbox:
   ros__parameters:
 
+    #Este documento se extajo del slam toolbox
     # Plugin params
     solver_plugin: solver_plugins::CeresSolver
     ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
@@ -14,14 +15,14 @@ slam_toolbox:
     map_frame: map
     base_frame: base_footprint
     scan_topic: /scan
-    mode: localization
+    mode: localization #Cambiar modo a "mapping"
 
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    map_file_name: /home/dev/dev_ws/my_map_serial
+    map_file_name: /home/dev/dev_ws/my_map_serial #Lugar donde guardo mapa slam
     # map_start_pose: [0.0, 0.0, 0.0]
-    map_start_at_dock: true
+    map_start_at_dock: true #Iniciar en el ultimo lugar que quede en el mapa
 
     debug_logging: false
     throttle_scans: 1

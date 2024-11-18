@@ -48,7 +48,7 @@
 
     <!-- BASE_FOOTPRINT LINK -->
 
-    <joint name="base_footprint_joint" type="fixed">
+    <joint name="base_footprint_joint" type="fixed">  <!-- se agrego para usar SLAM -->
         <parent link="base_link"/>
         <child link="base_footprint"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
