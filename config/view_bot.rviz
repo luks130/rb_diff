@@ -10,6 +10,8 @@ Panels:
         - /Image1/Topic1
         - /Map1
         - /Map1/Topic1
+        - /Map2
+        - /Map2/Topic1
       Splitter Ratio: 0.5
     Tree Height: 319
   - Class: rviz_common/Selection
@@ -75,7 +77,7 @@ Visualization Manager:
           Value: true
       Marker Scale: 1
       Name: TF
-      Show Arrows: false
+      Show Arrows: true
       Show Axes: false
       Show Names: false
       Tree:
@@ -235,6 +237,27 @@ Visualization Manager:
         Value: /map_updates
       Use Timestamp: false
       Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /global_costmap/costmap
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /global_costmap/costmap_updates
+      Use Timestamp: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -280,26 +303,21 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: rviz_default_plugins/Orbit
-      Distance: 12.982807159423828
+      Angle: 0
+      Class: rviz_default_plugins/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
-      Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
-      Focal Shape Fixed Size: true
-      Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.1152020692825317
+      Scale: 579.8228759765625
       Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 4.693530082702637
+      Value: TopDownOrtho (rviz_default_plugins)
+      X: -0.004088433459401131
+      Y: -0.21676504611968994
     Saved: ~
 Window Geometry:
   Displays:
@@ -317,5 +335,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1440
-  X: 839
-  Y: 210
+  X: 1048
+  Y: 271

@@ -7,14 +7,14 @@ joy_node:
 teleop_node:
   ros__parameters:
     axis_linear:
-      x: 1
+      x: 7   #aca definimos los axis dependiendo del control remoto
     scale_linear:
       x: 0.5
     scale_linear_turbo:
       x: 1.0
 
     axis_angular:
-      yaw: 0
+      yaw: 6   #aca definimos los axis dependiendo del control remoto
     scale_angular:
       yaw: 0.5
     scale_angular_turbo:
@@ -24,4 +24,4 @@ teleop_node:
     enable_button: 6
     enable_turbo_button: 7
 
-    require_enable_button: true
+    require_enable_button: true #Configurar como quiero que funcione el tuerbo
